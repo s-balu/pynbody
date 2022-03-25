@@ -103,19 +103,19 @@ class SubFindHDFHaloCatalogue(HaloCatalogue) :
 
     # Names of various groups and attributes in the hdf file (which seemingly may vary in different versions of SubFind?)
 
-    _fof_name = 'FOF'
-    _subfind_name = 'SUBFIND'
-    _subfind_grnr_name = 'GrNr'
-    _subfind_first_gr_name = 'FirstSubOfHalo'
+    _fof_name = 'Group'
+    _subfind_name = 'Subhalo'
+    _subfind_grnr_name = 'SubhaloGroupNr'
+    _subfind_first_gr_name = 'GroupFirstSub'
 
-    _numgrps_name = 'Total_Number_of_groups'
-    _numsubs_name = 'Total_Number_of_subgroups'
+    _numgrps_name = 'GroupOffsetType'
+    _numsubs_name = 'GroupNsubs'
 
-    _grp_offset_name = 'Offset'
-    _grp_len_name = 'Length'
+    _grp_offset_name = 'GroupOffsetType'
+    _grp_len_name = 'GroupLen'
 
-    _sub_offset_name = 'SUB_Offset'
-    _sub_len_name = 'SUB_Length'
+    _sub_offset_name = 'SubhaloOffsetType'
+    _sub_len_name = 'SubhaloLen'
 
     def __init__(self, sim) :
         super().__init__(sim)
